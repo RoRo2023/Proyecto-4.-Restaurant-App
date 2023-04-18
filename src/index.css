@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+/* 0a1128  77867f f4d35e ee964b f95738 */
+
+/*Header */
+header{
+  background-color: #f95738;
+}
+/* Logo: Roma antika Pizzeria */
+
+/*Reseña */
+.reseña{
+  background-color: #ee964b;
+}
+
+/*Menu*/
+.menu{
+  background-color: #f4d35e;
+}
+
+/*Formulario*/
+.formulario{
+  background-color: #77867f;
+}
+
+/*Articulo*/
+.articulo{
+  background-color: #f4d35e;
+}
+
+/*Reserva*/
+.reserva{
+  background-color: #ee964b;
+}
+
+/*Info*/
+.info{
+  background-color: #77867f;
+}
+
+/*Footer*/
+footer{
+  background-color: #0a1128;
+  color: white;
+}
