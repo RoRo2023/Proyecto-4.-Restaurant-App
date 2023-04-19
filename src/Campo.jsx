@@ -1,10 +1,10 @@
 //import '../index.css'
 
-function Campo(){
+function Campo({text}){
     
     return(
         <>
-    <button>Campo</button>
+    <input type="text" placeholder={text} size="40"></input>
     </>
     )
 }

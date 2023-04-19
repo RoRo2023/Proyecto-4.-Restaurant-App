@@ -25,10 +25,10 @@ function App() {
         
         <Reseña/> {/* Una sección o página sobre información principal del restaurante */}
         <Menu/> {/* *Opcional* Un componente que incluya el menú completo del restaurante */}
-        <Formulario/> {/* Una sección de formulario de contacto */}
-        <Articulo/> {/* *Opcional* Un blog que incluya un artículo */}
+        {/*<Formulario/> {/* Una sección de formulario de contacto */}
+        {/*<Articulo/> {/* *Opcional* Un blog que incluya un artículo */}
         <Reserva/> {/* *Opcional* Un componente que permita reservar una mesa en una hora y fecha específica para un usuario*/}
-        <Info/> {/* Una sección de datos de ubicación y correo electrónico */}
+        {/*<Info/> {/* Una sección de datos de ubicación y correo electrónico */}
         
         <Footer/> {/*  */}
     </div>

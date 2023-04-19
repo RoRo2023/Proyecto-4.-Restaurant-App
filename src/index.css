@@ -16,6 +16,14 @@ h1{
   margin: 0;
 }
 
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
+
 p{
   margin: 0;
 }
@@ -26,7 +34,6 @@ p{
 header{
   background-color: #f95738;
 }
-/* Logo: Roma antika Pizzeria */
 
 /*Reseña */
 .reseña{
@@ -45,12 +52,14 @@ header{
 
 /*Articulo*/
 .articulo{
-  background-color: #f4d35e;
+
+  background-color: #ee964b;
 }
 
 /*Reserva*/
 .reserva{
-  background-color: #ee964b;
+
+  background-color: #77867f;
 }
 
 /*Info*/
