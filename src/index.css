@@ -28,21 +28,122 @@ p{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  color: #efefef;
+  
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 600;
+}
+
+
 /* 0a1128  77867f f4d35e ee964b f95738 */
 
 /*Header */
 header{
   background-color: #f95738;
+  position: fixed;
+  width: 100%;
+}
+
+header nav{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0 20px 0;
+  color: white;
+  justify-content: space-between
+}
+
+.header-logo h1{
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.header-logo h1:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 155px;
+  background: white;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+}
+
+.dice{
+  font-size: 20px;
+}
+
+.header-text{
+  display: flex;
+  align-items: center;
 }
 
 /*Reseña */
 .reseña{
   background-color: #ee964b;
+  text-align: justify;
+}
+
+.reseña nav{
+
+  max-width: 1170px;
+  padding: 100px 80px 0 80px ;
+}
+
+.reseña-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px 100px;
+}
+
+.reseña-info div{
+  text-align: center;
+  align-content: center;
 }
 
 /*Menu*/
 .menu{
   background-color: #f4d35e;
+}
+
+.menu nav{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  background-color: white;
+  margin: 20px 0px;
+  border-spacing: 0;
+  width: 75%;
+}
+
+th{
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /*Formulario*/
@@ -58,8 +159,39 @@ header{
 
 /*Reserva*/
 .reserva{
-
   background-color: #77867f;
+  display: flex;
+  justify-content: center;
+}
+
+.reserva nav{
+  padding: 30px 0;
+  width: 75%;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.reserva-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: justify;
+  padding-right: 20px;
+}
+
+
+
+.reserva form{
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.reserva p{
+  font-size: 20px;
 }
 
 /*Info*/
@@ -71,4 +203,45 @@ header{
 footer{
   background-color: #0a1128;
   color: white;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: 0 auto;
+  
+  padding-top: 30px;
+}
+
+.redes-sociales{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.list{
+  text-align: left;
+}
+
+dt{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+dd{
+  margin-inline-start: 0;
+}
+.redes-sociales p{
+  font-size: 30px;
+}
+
+.foot{
+  border-color: rgb(170, 170, 170);
+    border-top-style: solid;
+    border-top-width: 1px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 30px 0 10px;
 }
