@@ -1,6 +1,9 @@
 //import '../index.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+import Dropdown from 'react-bootstrap/Dropdown';
+
+
 function HeaderComponent(){
 
     return(
@@ -17,6 +20,20 @@ function HeaderComponent(){
                         <li><a href="#">Reservaciones</a></li>
                     </ul>
                 </div>
+                <div className="menu2" style={{display: "none"}}>
+                    <Dropdown>
+                        <Dropdown.Toggle id="dropdown-basic" style={{color: "white", backgroundColor: "#f95738", border: "none", fontSize: "30px"}}>
+                            <i class="bi bi-list"></i>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Menu</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">¿Quiénes somos?</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Reservaciones</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </div>
+                
             </nav>
         </header>
     )
