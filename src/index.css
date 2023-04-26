@@ -94,23 +94,30 @@ header nav{
 .reseña{
   background-color: #ee964b;
   text-align: justify;
+  padding: 50px 0;
 }
 
 .reseña nav{
-
   max-width: 1170px;
-  padding: 100px 80px 0 80px ;
+  padding: 0 80px;
+  margin: 0 auto;
+  
 }
 
 .reseña-info{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 30px 100px;
+  padding: 80px 100px 30px 100px;
 }
 
 .reseña-info div{
   text-align: center;
   align-content: center;
+}
+
+.reseña-img img{
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*Menu*/
@@ -244,4 +251,9 @@ dd{
     width: 100%;
     margin: 50px auto 0;
     padding: 30px 0 10px;
+}
+
+@media screen and (max-width: 1260px) {
+
+
 }

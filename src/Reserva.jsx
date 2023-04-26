@@ -1,12 +1,24 @@
 import ButtonComponent from "./ButtonComponent";
 import Campo from "./Campo";
-import Form from 'react-bootstrap/Form';
+//import Form from 'react-bootstrap/Form';
 
-import {useState} from 'react';
+import {useRef, useState} from 'react';
+
+import { addData, getData, updateData, handleEnviar} from './utils/aws-dynamodb';
 
 function Reserva(){ {/* *Opcional* Un componente que permita reservar una mesa en una hora y fecha específica para un usuario*/}
 
-    const [number, setNumber] = useState(1);
+    const nombreRef = useRef(null);  
+    const emailRef = useRef(null); 
+    const telefonoRef = useRef(null); 
+    const mensajeRef = useRef(null); 
+
+    /*
+    const [nombre, setNombre] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefono, setTelefono] = useState('');
+    const [mensaje, setMensaje] = useState('');
+*/
 
     return(
         <div className="reserva">
@@ -24,13 +36,13 @@ function Reserva(){ {/* *Opcional* Un componente que permita reservar una mesa e
                         <p><i class="bi bi-envelope"></i>contacto@pizzadice.com</p>
                     </div>
                 </div>
-                <Form>
-                    <Campo text={`Nombre`} as={"input"} type={"text"} />
-                    <Campo text={`Email`} as={"input"} type={"email"}/>
-                    <Campo text={`Teléfono`} as={"input"} type={"text"}/>
-                    <Campo text={`Mensaje y comentarios`} as={"textarea"}  rows={3}/>
-                    <ButtonComponent text={'Enviar'} event = {()=>setNumber(number+1) }/>
-                </Form>
+                <form>
+                    <Campo text={`Nombre`} as={"input"} type={"text"} innerRef={nombreRef}/>
+                    <Campo text={`Email`} as={"input"} type={"email"} innerRef={emailRef}/>
+                    <Campo text={`Teléfono`} as={"input"} type={"text"} innerRef={telefonoRef}/>
+                    <Campo text={`Mensaje y comentarios`} as={"textarea"}  rows={3} innerRef={mensajeRef}/>
+                    <ButtonComponent text={'Enviar'} type={"submit"} event = {()=>addData(nombreRef.current.value, emailRef.current.value, telefonoRef.current.value, mensajeRef.current.value)}/>
+                </form>
                 {/* 
                 <form action="post">
                     <Campo text={`Nombre`}/>
@@ -39,6 +51,10 @@ function Reserva(){ {/* *Opcional* Un componente que permita reservar una mesa e
                     <Campo text={`Mensaje y comentarios`}/>
                     <button>Enviar</button>
                 </form>
+
+
+
+                addData(nombreRef, emailRef, telefonoRef, mensajeRef)
                 */}
             </nav>
         </div>
