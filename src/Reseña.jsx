@@ -28,7 +28,7 @@ function Reseña(){ {/* Una sección o página sobre información principal del 
                     <img src={require("./assets/pizza-1080x671.jpg")} alt="" className='img-fluid'/>
                 </div>
                 <div className="reseña-text">
-                    <h1 style={{fontSize: "50px", margin: "25px 0 10px"}}>Las mejores pizzas del Cerro</h1>
+                    <h1 style={{fontSize: "50px", margin: "25px 0 10px", textAlign: "left"}}>Las mejores pizzas del Cerro</h1>
                     <p style={{fontSize: "20px"}}>Disfruta el inigualable sabor de las centenarias recetas de la <span style={{fontStyle: "italic"}}>famiglia Di Giovanni</span>, 
                     de la campiña siciliana a las alturas de la Comarca Lagunera. Con la mejor vista desde la cumbre del cerro del Cristo de las Noas, al pie del teleférico, 
                     degustar una de nuestras pizzas con nuestra selección de ingredientes, se convertirá en toda una experiencia.</p>

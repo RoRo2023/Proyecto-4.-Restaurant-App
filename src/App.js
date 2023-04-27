@@ -12,9 +12,6 @@ import Reseña from './Reseña';
 import Reserva from './Reserva';
 import Footer from './Footer';
 
-//Utilidades
-import Hooks from './Hooks';
-
 function App() {
   return (
     <div className="App">
