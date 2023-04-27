@@ -1,6 +1,5 @@
 import ButtonComponent from "./ButtonComponent";
 import Campo from "./Campo";
-//import Form from 'react-bootstrap/Form';
 
 import {useRef, useState, useEffect,} from 'react';
 
@@ -50,8 +49,8 @@ function Reserva(){ {/* *Opcional* Un componente que permita reservar una mesa e
                 <form>
                     <Campo text={`Nombre`} as={"input"} type={"text"} innerRef={nombreRef} event ={() =>console.log(nombreRef.current.value)}/>
                     <Campo text={`Email`} as={"input"} type={"email"} innerRef={emailRef} event = {() =>setEmail(emailRef.current.value)}/>
-                    <Campo text={`Teléfono`} as={"input"} type={"text"} innerRef={telefonoRef} event ={() =>console.log(nombreRef.current.value)}/>
-                    <Campo text={`Mensaje y comentarios`} as={"textarea"}  rows={3} innerRef={mensajeRef} event ={() =>console.log(nombreRef.current.value)}/>
+                    <Campo text={`Teléfono`} as={"input"} type={"text"} innerRef={telefonoRef} event ={() =>console.log(telefonoRef.current.value)}/>
+                    <Campo text={`Mensaje y comentarios`} as={"textarea"}  rows={3} innerRef={mensajeRef} event ={() =>console.log(mensajeRef.current.value)}/>
                     <ButtonComponent text={'Enviar'} type={"submit"} event = {()=>
                         {setEmail(emailRef.current.value);
                         if(vEmail===true){addData(nombreRef.current.value, emailRef.current.value, telefonoRef.current.value, mensajeRef.current.value)}else{console.log("no")}}}/>
